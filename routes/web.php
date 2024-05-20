@@ -9,7 +9,8 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::resource('/productos', ProductoController::class);
+    
     Route::get('/dashboard', function(){
-        return view('dashboard');
+        return redirect()->route('productos.index');
     })->name('dashboard');
 });

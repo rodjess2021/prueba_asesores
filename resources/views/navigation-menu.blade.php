@@ -17,7 +17,7 @@
                     </x-nav-link>
 
                     <x-nav-link href="{{ route('productos.index') }}" :active="request()->routeIs('productos.index')">
-                        {{ __('Productos') }}
+                        {{ __('Asesores') }}
                     </x-nav-link>
                 </div>
             </div>
